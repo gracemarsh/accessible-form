@@ -1,0 +1,186 @@
+/* || ===================== Global Layout Set-up =====================  || */
+* {
+  box-sizing: border-box;
+}
+
+/* || ===================== Typography =====================  || */
+body {
+  color: rgb(34, 43, 53);
+}
+h1 {
+  background-color: rgb(34, 43, 53);
+  color: azure;
+  min-height: 70px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 70px;
+  margin: 0;
+}
+h2 {
+  font-size: 20px;
+}
+legend {
+  color: rgb(34, 43, 53);
+  font-size: 19px;
+  font-weight: 500;
+  width: 100%;
+}
+#signup {
+  color: rgb(34, 43, 53);
+  padding: 30px 0;
+  border-bottom: 7px double rgb(34, 43, 53);
+  text-align: center;
+  line-height: 20px;
+}
+#signup p {
+  font-size: 14px;
+}
+main {
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  color: rgb(78, 96, 112);
+  line-height: 35px;
+}
+p {
+  padding: 0 15px;
+  font-size: 17px;
+}
+input::placeholder {
+  opacity: 0.5;
+  text-align: left;
+  padding-right: 15px;
+  font-style: italic;
+  font-size: 11px;
+}
+
+input.placeholder-right::placeholder {
+  text-align: right;
+}
+
+.subscribe > * {
+  color: rgb(78, 96, 112);
+  font-size: 14px;
+  line-height: 30px;
+}
+
+footer {
+  color: rgb(78, 96, 112);
+  text-align: center;
+  font-style: italic;
+  font-size: 13px;
+  padding: 10px;
+}
+/* || ===================== Main Styles =====================  || */
+
+header {
+  text-align: center;
+}
+label {
+  display: block;
+  font-size: 15px;
+  color: rgb(78, 96, 112);
+}
+.container * {
+  padding: 0;
+}
+.container {
+  border: none;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+#zip {
+  max-width: 50%;
+}
+#news {
+  border-top: 2.5px solid rgb(34, 43, 53);
+  padding-top: 15px;
+}
+
+/* || ===================== Inputs =====================  || */
+.pretty-input {
+  width: 100%;
+  min-height: 55px;
+  border: none;
+  background-color: rgb(235, 237, 238);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+textarea.pretty-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button.pretty-input {
+  background: rgb(65, 175, 166);
+  color: white;
+  font-size: 17px;
+}
+
+.pretty-input:focus {
+  outline-color: #4e6070;
+  outline-width: 2px;
+}
+
+/* || ===================== Input Variations =====================  || */
+
+.box {
+  min-height: 15px;
+  border-radius: 4px;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 0;
+  vertical-align: text-top;
+}
+
+select#state {
+  font-size: 13px;
+  color: rgb(78, 96, 112);
+}
+label[for="topics"],
+#topics {
+  margin-top: 10px;
+}
+/* || ===================== Media Queries =====================  || */
+@media (min-width: 768px) {
+  main,
+  footer {
+    width: 620px;
+    margin: auto;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  #signup p {
+    font-size: 14px;
+  }
+  form {
+    line-height: 70px;
+  }
+  fieldset.contact label,
+  fieldset.contact .pretty-input {
+    display: inline-block;
+    padding-right: 10px;
+  }
+  fieldset.contact .pretty-input {
+    width: 436px;
+  }
+  fieldset.contact label {
+    width: 180px;
+  }
+  #zip {
+    margin-bottom: 30px;
+    max-width: 150px;
+  }
+  .subscribe > * {
+    line-height: 30px;
+  }
+  .newsletter label {
+    display: block;
+  }
+}
