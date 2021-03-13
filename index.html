@@ -24,147 +24,150 @@
       <h1 id="banner">THE CODE REVIEW</h1>
     </header>
     <main>
-      <div id="signup">
-        <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-      </div>
-      <form action=>
-        <fieldset class="container contact">
-          <legend>Contact Information</legend>
+      <div class="main">
+        <div id="signup">
+          <h2>Signup for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+        
+        <form action=>
+          <fieldset class="container contact">
+            <legend>Contact Information</legend>
 
-          <label for="name">Full Name</label>
-          <input
-            class="pretty-input placeholder-right"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Required"
-            required
-          />
+            <label for="name">Full Name</label>
+            <input
+              class="pretty-input placeholder-right"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Required"
+              required
+            />
 
-          <label for="email">Email Address</label>
-          <input
-            class="pretty-input placeholder-right"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Required"
-            required
-          />
+            <label for="email">Email Address</label>
+            <input
+              class="pretty-input placeholder-right"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Required"
+              required
+            />
 
-          <label for="phone">Phone Number</label>
-          <input
-            class="pretty-input"
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="e.g. 0449 955 432"
-          />
-
-          <label for="address">Street Address</label>
-          <input
-            class="pretty-input"
-            type="text"
-            id="address"
-            name="address"
-            placeholder="e.g. 42 Wallaby Way"
-          />
-
-          <label for="city">City</label>
-          <input
-            class="pretty-input"
-            type="text"
-            id="city"
-            name="city"
-            placeholder="e.g. Sydney"
-          />
-
-          <label for="state">State</label>
-          <select class="pretty-input" id="state" name="state">
-            <option selected>Choose State</option>
-            <option value="ACT">ACT</option>
-            <option value="NSW">NSW</option>
-            <option value="NT">NT</option>
-            <option value="QLD">QLD</option>
-            <option value="SA">SA</option>
-            <option value="TAS">TAS</option>
-            <option value="VIC">VIC</option>
-            <option value="WA">WA</option>
-            <!-- Do I need name and ID in options? -->
-          </select>
-
-          <label for="zip">Zip Code</label>
-          <input
-            class="pretty-input"
-            type="number"
-            id="zip"
-            name="zip"
-            placeholder="e.g. 2005"
-          />
-        </fieldset>
-
-        <fieldset class="container newletter">
-          <legend id="news">Newsletter</legend>
-          <div class="subscribe">
-            <p>Select the newsletters you would like to receive:</p>
-
-            <label for="html-news">
-              <input
-                class="pretty-input box"
-                type="checkbox"
-                id="html-news"
-                name="html-news"
-              />HTML News</label
-            >
-            <label for="css-news">
-              <input
-                class="pretty-input box"
-                type="checkbox"
-                id="css-news"
-                name="css-news"
-              />CSS News</label
-            >
-            <label for="js-news">
-              <input
-                class="pretty-input box"
-                type="checkbox"
-                id="js-news"
-                name="js-news"
-              />Javascript News</label
-            >
-
-            <p>Newsletter format:</p>
-            <label for="html"
-              ><input
-                class="pretty-input box"
-                type="radio"
-                id="html"
-                name="news-format"
-              />HTML</label
-            >
-            <label for="plain"
-              ><input
-                class="pretty-input box"
-                type="radio"
-                id="plain"
-                name="news-format"
-              />Plain text</label
-            >
-
-            <label for="topics">Other topics you'd like to hear about:</label>
-            <textarea
+            <label for="phone">Phone Number</label>
+            <input
               class="pretty-input"
-              id="topics"
-              name="topics"
-              placeholder="e.g. I would love to know more about React."
-            ></textarea>
-          </div>
-        </fieldset>
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="e.g. 0449 955 432"
+            />
 
-        <button class="pretty-input" type="submit" id="submit" value="submit">
-          Sign Up
-        </button>
-      </form>
+            <label for="address">Street Address</label>
+            <input
+              class="pretty-input"
+              type="text"
+              id="address"
+              name="address"
+              placeholder="e.g. 42 Wallaby Way"
+            />
+
+            <label for="city">City</label>
+            <input
+              class="pretty-input"
+              type="text"
+              id="city"
+              name="city"
+              placeholder="e.g. Sydney"
+            />
+
+            <label for="state">State</label>
+            <select class="pretty-input" id="state" name="state">
+              <option selected>Choose State</option>
+              <option value="ACT">ACT</option>
+              <option value="NSW">NSW</option>
+              <option value="NT">NT</option>
+              <option value="QLD">QLD</option>
+              <option value="SA">SA</option>
+              <option value="TAS">TAS</option>
+              <option value="VIC">VIC</option>
+              <option value="WA">WA</option>
+              <!-- Do I need name and ID in options? -->
+            </select>
+
+            <label for="zip">Zip Code</label>
+            <input
+              class="pretty-input"
+              type="number"
+              id="zip"
+              name="zip"
+              placeholder="e.g. 2005"
+            />
+          </fieldset>
+
+          <fieldset class="container newletter">
+            <legend id="news">Newsletter</legend>
+            <div class="subscribe">
+              <p>Select the newsletters you would like to receive:</p>
+
+              <label for="html-news">
+                <input
+                  class="pretty-input box"
+                  type="checkbox"
+                  id="html-news"
+                  name="html-news"
+                />HTML News</label
+              >
+              <label for="css-news">
+                <input
+                  class="pretty-input box"
+                  type="checkbox"
+                  id="css-news"
+                  name="css-news"
+                />CSS News</label
+              >
+              <label for="js-news">
+                <input
+                  class="pretty-input box"
+                  type="checkbox"
+                  id="js-news"
+                  name="js-news"
+                />Javascript News</label
+              >
+
+              <p>Newsletter format:</p>
+              <label for="html"
+                ><input
+                  class="pretty-input box"
+                  type="radio"
+                  id="html"
+                  name="news-format"
+                />HTML</label
+              >
+              <label for="plain"
+                ><input
+                  class="pretty-input box"
+                  type="radio"
+                  id="plain"
+                  name="news-format"
+                />Plain text</label
+              >
+
+              <label for="topics">Other topics you'd like to hear about:</label>
+              <textarea
+                class="pretty-input"
+                id="topics"
+                name="topics"
+                placeholder="e.g. I would love to know more about React."
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <button class="pretty-input" type="submit" id="submit" value="submit">
+            Sign Up
+          </button>
+        </form>
+      </div>
     </main>
 
     <footer>

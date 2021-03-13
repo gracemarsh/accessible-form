@@ -43,6 +43,9 @@ main {
   color: rgb(78, 96, 112);
   line-height: 35px;
 }
+#main {
+  background-color: #fffaff;
+}
 p {
   padding: 0 15px;
   font-size: 17px;
@@ -109,8 +112,13 @@ fieldset {
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 20px;
+  transition: all 150ms ease;
+  outline: 0px solid transparent;
 }
-
+.pretty-input:focus {
+  outline-color: #4e6070;
+  outline-width: 3px;
+}
 textarea.pretty-input {
   min-height: 100px;
   resize: vertical;
@@ -121,12 +129,6 @@ button.pretty-input {
   color: white;
   font-size: 17px;
 }
-
-.pretty-input:focus {
-  outline-color: #4e6070;
-  outline-width: 2px;
-}
-
 /* || ===================== Input Variations =====================  || */
 
 .box {

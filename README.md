@@ -12,9 +12,19 @@ Added: <option default>Choose State</option> to create "default option"
   text-align: right;
   }
 
-
 - How to make header banner stretch 100% in media query?
-
 
 - input:focus borders didn't show up. Need to use "outline-color"
 - outline-colour only worked with Hex value.
+
+- to make a focus state transition, need to give a default first on the original element on css.
+
+e.g.
+.tristan {
+opacity: human;
+transition: all 5s ease;
+}
+
+.tristan:focus {
+opacity: ghost;
+}
