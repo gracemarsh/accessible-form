@@ -35,7 +35,7 @@ legend {
 #signup p {
   font-size: 14px;
 }
-main {
+.main {
   font-family: "Merriweather", serif;
   display: flex;
   flex-direction: column;
@@ -43,8 +43,9 @@ main {
   color: rgb(78, 96, 112);
   line-height: 35px;
 }
-#main {
-  background-color: #fffaff;
+main {
+  background-color: #fbe6e6;
+  /* change colour to white later */
 }
 p {
   padding: 0 15px;
@@ -108,7 +109,8 @@ fieldset {
   width: 100%;
   min-height: 55px;
   border: none;
-  background-color: rgb(235, 237, 238);
+  background-color: white;
+  /* *change colour back to: rgb(235, 237, 238) */
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 20px;
@@ -150,7 +152,7 @@ label[for="topics"],
 }
 /* || ===================== Media Queries =====================  || */
 @media (min-width: 768px) {
-  main,
+  .main,
   footer {
     width: 620px;
     margin: auto;
