@@ -44,9 +44,9 @@ legend {
   line-height: 35px;
 }
 main {
-  background-color: #fbe6e6;
-  /* change colour to white later */
+  background-color: white;
 }
+
 p {
   padding: 0 15px;
   font-size: 17px;
@@ -109,8 +109,7 @@ fieldset {
   width: 100%;
   min-height: 55px;
   border: none;
-  background-color: white;
-  /* *change colour back to: rgb(235, 237, 238) */
+  background-color: rgb(235, 237, 238);
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 20px;
