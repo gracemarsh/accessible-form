@@ -1,5 +1,7 @@
 [Techdegree Project 3 - Accessible Online Registration Form](https://gracemarsh.github.io/accessible-form/)
 
+In this project, I was provided a design mockup and built a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Using the supplied mockup files, you'll build a mobile and desktop version of the form using media queries, and a "mobile-first" approach, ensuring that I adhere to accessibility guidelines.
+
 # CHALLENGES:
 
 Didn't know about the placeholder attribute.
